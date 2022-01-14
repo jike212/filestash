@@ -22,7 +22,7 @@ export function opener(file) {
     } else if (["application/javascript", "application/xml", "application/json",
         "application/x-perl"].indexOf(mime) !== -1) {
         return ["editor", null];
-    } else if (["audio/wave", "audio/mp3", "audio/flac", "audio/ogg"].indexOf(mime) !== -1) {
+    } else if (["audio/wave", "audio/mp3", "audio/flac", "audio/ogg", "audio/x-m4a"].indexOf(mime) !== -1) {
         return ["audio", null];
     } else if (mime === "application/x-form") {
         return ["form", null];
